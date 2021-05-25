@@ -16,6 +16,9 @@ public class OrderServiceTest {
         Item itemSelected1 = new Item("Idli", 25);
         Item itemSelected2 = new Item("Butter Masala Dosa", 50);
         Item itemSelected3 = new Item("Filter Coffee", 10);
+        itemsSelected.add(itemSelected1);
+        itemsSelected.add(itemSelected2);
+        itemsSelected.add(itemSelected3);
         assertThat(service.totalValueOfItemsSelected(itemsSelected), equalTo(85));
 
     }
