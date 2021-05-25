@@ -30,6 +30,8 @@ class RestaurantServiceTest {
         assertThat(searchResult.getMenu().size(), equalTo(2));
         assertNotNull(searchResult.openingTime);
         assertNotNull(searchResult.closingTime);
+        assertThat(searchResult.openingTime, equalTo(LocalTime.parse("10:30:00")));
+        assertThat(searchResult.closingTime, equalTo(LocalTime.parse("22:00:00")));
     }
 
     //You may watch the video by Muthukumaran on how to write exceptions in Course 3: Testing and Version control: Optional content
